@@ -3,7 +3,7 @@ package com.example.lerijava;
 public class ThreadBankaMain {
     public static void main(String[] args) {
 
-        Banka b1=new Banka(5000);
+        Banka b1=new Banka(6000);
 
 
         BenimIslemThread is1=new BenimIslemThread("SAMET",700,b1);
@@ -17,6 +17,9 @@ public class ThreadBankaMain {
 
         BenimIslemThread is4=new BenimIslemThread("AHMET",1900,b1);
         is4.start();
+
+        BenimIslemThread is5=new BenimIslemThread("ENGİN",1900,b1);
+        is5.start();
     }
 
 
